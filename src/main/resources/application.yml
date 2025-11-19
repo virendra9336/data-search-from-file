@@ -1,0 +1,17 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ragdb
+    type: caffeine
+  ai:
+    retry:
+      enabled: fals
+    openai:
+      api-key: ${KEY}
+      chat:
+        options:
+          model: gpt-4o-mini
+      embedding:
+        options:
+          model: text-embedding-3-small
